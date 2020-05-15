@@ -1,7 +1,9 @@
 void call() {
 node {
-	stage("Gradle: Build"){
+docker.image("gradle:latest").inside() {
+	stage("Build"){
 	sh 'gradle clean build'
 	}
+     }
 }
 }
