@@ -5,4 +5,5 @@ docker.image("gradle:latest").inside() {
 	 sh 'gradle build'
      }
    }
+ }
 }
